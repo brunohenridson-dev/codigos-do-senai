@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    hino do flamengo
+</header>
+<main>
+  <h1>conteúdo da pagina</h1>
+
+<div class="container-layout">
+  <main class="hino-centro">
+    <p>Uma vez Flamengo</p><br>
+<p>Sempre Flamengo</p><br>
+<p>Flamengo sempre eu hei de ser</p><br>
+
+<p>É meu maior prazer vê-lo brilhar</p><br>
+<p>Seja na terra, seja no mar</p><br>
+<p>Vencer, vencer, vencer</p><br>
+
+<p>Uma vez Flamengo</p><br>
+<p>Flamengo até morrer</p><br>
+
+<p>Na regata, ele me mata</p><br>
+<p>Me maltrata, me arrebata</p><br>
+<p>Que emoção no coração</p><br>
+<p>Consagrado no gramado</p><br>
+<p>Sempre amado, o mais cotado</p><br>
+<p>No Fla-Flu é o: Ai, Jesus!</p><br>
+
+<p>Vencer, vencer, vencer</p>
+</main>
+</main>
+<div class="esquerda">
+    <img src="https://www.bing.com/th/id/OIP.lxjXka70dwxI_PdntlK1qwAAAA?w=193&h=193&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2"></img>
+</div>
+</div>
+
+<br>
+<div class="box" id="box1">estudo de flexbox</div>
+<div class="box" id="box2"> estudo de div</div>
+<div class="box" id="box3">estudo de CSS</div>
+<footer>
+    vamo ser campeão,vamo flamengo
+</footer>
+</body>
+</html>
