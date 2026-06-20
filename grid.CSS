@@ -1,0 +1,42 @@
+header {
+background-color: red; 
+padding: 20px;
+text-align: center;
+color: white;
+}
+.container-layout {
+display: flex;
+align-items: flex-start;
+margin-top: 20px;
+}
+footer {
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    margin: 0.1px 0;
+}
+.esquerda {
+   width: 200px;
+   flex-shrink: 0;
+}
+.esquerda img{
+    width:100%;
+    display: block;
+}
+
+.hino-centro{
+    flex: 1;               /* Faz o hino ocupar TODO o espaço restante do meio */
+    text-align: center;    /* Centraliza o texto do hino perfeitamente no meio */
+    font-family: Arial, sans-serif;
+}
+}
+
+.container {
+    background-color: rgb(120,157, 185);
+font-family:Arial, Helvetica, sans-serif;
+padding: 10px;
+display: flex;
+}
