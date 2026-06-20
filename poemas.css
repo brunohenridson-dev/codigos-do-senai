@@ -1,0 +1,38 @@
+body {
+font-family: arial, helvetica, sans-serif;
+margin: 0;
+}
+
+header{
+    background-color: rgb(63,63,63);
+    color: #fff;
+    padding: 20px;
+    text-align:center;
+}
+
+main{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+padding: 20px;
+}
+.content{
+    background-color: rgb(201,196,196);
+    padding:20px;
+    border-radius:3px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+}
+.titulo-secao {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    width: 100%;
+}
