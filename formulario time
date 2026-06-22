@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"></meta>
+    <title>aula javascript</title>
+    <script src="javascript.js3"></script>
+    <head>
+
+    </head>
+    <body>
+   <h1>formulario</h1>
+   <label for="escolher seu idioma" id="idioma">escolha um idioma</label>
+   <select name="idiomas" id="idiomx">
+   <option value="english">ingles</option>
+   <option value="français">frances</option>
+   <option value="português">português</option>
+   </select>
+<div class="preferencia">
+    <label for="flamengo">flamengo</label>
+    <input type="checkbox" name="time" id="time"/></div>
+
+<div class ="preferencia">
+    <label for="gremio"> gremio</label>
+    <input type="checkbox" name="gremio" id="gremio"/>
+    </div>
+    <button class="enviaR" type="button">enviar </button>
+    </label>
+
+    </label>
+</div>
+<form action ="/enviar-dados" method = "post">
+<label for="descrever">porque voce gosta de futebol:</label>
+<input type="texto" id="nome" name="nome_usuario" placeholder="seu nome">
+<textarea id="mensagem" name="mensagem_usuario" rows="5"cols="33" placeholder="escreva por voce gosta de futebol"></textarea>
+<button type ="submit">enviar</button>
+
+</form>
