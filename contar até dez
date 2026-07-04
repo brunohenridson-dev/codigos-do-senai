@@ -1,0 +1,12 @@
+for (let i = 0; i <5; i++) 
+{
+console.log("passo numero:" + i)
+}
+
+let contar = 10
+while (contar > 0)
+    {
+console.log(contar)
+contar--;
+}
+console.log("contamos até 10 ehhhhhhh");
