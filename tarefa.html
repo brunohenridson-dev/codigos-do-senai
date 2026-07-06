@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <script src="javall.js" defer></script>
+    <charset="UTF-8"/>
+   <style> 
+    
+
+body {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+    margin: 0;               
+    background-color: #f9f9f9; 
+}
+
+/* BLOCO 2: Abre o #tarefa, aplica os estilos dele e FECHA o #tarefa */
+#tarefa {
+    margin: 10px;           
+    padding: 10px 15px;     
+    color: lightblue;
+    display: block;
+    width: 300px;           
+    height: 40px;           
+}
+</style>
+</head>
+<body>
+    <h1>lista de tarefas</h1>
+    <form action="/enviar-dados" method="POST">
+<label for="tarefa">digite sua tarefa:</label>
+<input type="text" id="tarefa" name="tarefa" placeholder="Digite seu nome">
+</form>
+<div class="tarefa">
+    <button type="submit">Enviar Formulário</button>
+
+</div>
+<form action="salvar" method="post">
+
+
+<label for="coisas"> escolha uma coisa a fazer pre selecionada</label>
+<input type="text" id="tarefas" list="coisas" placeholder="Busque uma coisa a se fazer">
+    <datalist id="coisas">
+<option value="cozinhando"></option>
+<option value="limpando"></option>
+<option value="trabalhando"></option>
+<option value="estudando"></option>
+ </datalist><button type="submit">enviar formulario</button>
+
+    </form>
+</body>
