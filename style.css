@@ -1,0 +1,23 @@
+.poemas {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+}
+
+.pecado {
+   
+    background-color: lightgray;
+    padding: 10px;
+   
+}
+
+h2 {
+    color: black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: darkgray;
+}
