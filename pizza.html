@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <script src="javascript5.js" defer></script>
+    <style>
+        h2 {
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Escolha a sua pizza</h2>
+    </header>
+
+    <ul>
+        <li>Escolha 1 para pizza de calabresa</li>
+        <li>Escolha 2 para pizza de quatro queijos</li>
+        <li>Escolha 3 para pizza de frango com catupiry</li>
+    </ul>
+
+    <!-- ID corrigido para "meuInput" e espaço antes do "oninput" -->
+    <input type="number" min="0" max="3" id="meuInput" value="1" oninput="if(this.value > 3) this.value = 3;">
+    <br><br>
+
+    <textarea rows="4" cols="50" id="caixa" placeholder="seu tipo de pizza"readonly></textarea>
+    <br>
+
+    <!-- Corrigido o onclick para chamar a função "verificarpizza()" -->
+    <button onclick="verificarpizza()">Veja o resultado</button>
+
+</body>
+</html>
