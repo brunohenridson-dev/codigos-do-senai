@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Site com Header e Laterais Azuis</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* CONFIGURAÇÃO DO GRID */
+        .site-container {
+            display: grid;
+            /* Define 3 colunas (15% azul | 70% branco | 15% azul) */
+            grid-template-columns: 4% 92% 4%; 
+            /* Linha 1: 80px de altura para o Header | Linha 2: 1fr pega o resto da tela */
+            grid-template-rows: 80px 1fr; 
+            
+            /* MAPA DO LAYOUT:
+               O header ocupa as 3 colunas no topo! */
+            grid-template-areas: 
+                "topo topo topo"
+                "esquerda meu-conteudo direita";
+
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        /* 1. Header (Topo Azul) */
+        .header {
+            grid-area: topo;
+            background-color: #0066cc;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header h2 {
+            margin: 0;
+        }
+
+        /* 2. Laterais Azuis */
+        .lateral-esquerda {
+            grid-area: esquerda;
+            background-color: #0066cc;
+        }
+
+        .lateral-direita {
+            grid-area: direita;
+            background-color: #0066cc;
+        }
+
+        /* 3. Conteúdo Central (Branco) */
+        .conteudo {
+            grid-area: meu-conteudo;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="site-container">
+        <!-- 1. Topo Azul -->
+        <header class="header">
+            
+        </header>
+
+        <!-- 2. Coluna Esquerda (15%) -->
+        <div class="lateral-esquerda"></div>
+
+        <!-- 3. Conteúdo Central (70%) -->
+        <main class="conteudo">
+            <h1 id="titulo">english site</h1>
+            <p id="paragrafo">click here to change the idiom of the site</p>
+            
+            <input type="radio" id="spanish" name="idioma" value="spanish" checked>
+            <label for="spanish">spanish</label><br>
+            
+            <input type="radio" id="french" name="idioma" value="french">
+            <label for="french">french</label><br>
+            
+            <input type="radio" id="portuguese" name="idioma" value="portuguese">
+            <label for="portuguese">portuguese</label>
+            
+            <br><br>
+            <button id="botao" onclick="translator()">translate to</button>
+        </main>
+
+        <!-- 4. Coluna Direita (15%) -->
+        <div class="lateral-direita"></div>
+    </div>
+
+    <script>
+       function translator() {
+            const spanish = document.getElementById("spanish");
+            const french = document.getElementById("french");
+            const portuguese = document.getElementById("portuguese");
+            const titulo = document.getElementById("titulo");
+            const paragrafo = document.getElementById("paragrafo");
+            
+            if (french.checked) {
+               titulo.innerText = "un site français";
+               paragrafo.innerText = "cliquez ici pour changer la langue";
+            }
+            else if (portuguese.checked) {
+                titulo.innerText = "um site brasileiro";
+                paragrafo.innerText = "clique aqui para mudar o idioma";
+            }
+            else if (spanish.checked) {
+                titulo.innerText = "sitio en español";
+                paragrafo.innerText = "clique aquí para cambiar el idioma";
+            }
+       }
+    </script>
+</body>
+</html>
