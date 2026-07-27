@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="UTF-8">
+   <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+    header{
+      background-color: blue;
+    }
+    header h2{
+    color: white;
+    }
+.container{
+  display: grid;
+  grid-template-columns:125px 1fr 125px;
+  gap: 16px;
+  /*justify-items: center;*/
+  align-items: start;
+  flex-grow: 1;
+ margin: 0;
+}
+.direita{
+  color: white;
+  justify-self: end;
+  height:250px;
+  padding: 10px;
+   background-color: #336196;
+   border-radius: 1px;
+}
+.esquerda{
+  color:white;
+  /*justify-self: start;*/
+  flex-grow: 1;
+  height: 250px;
+  padding: 10px;
+  background-color: #336196;
+  border-radius: 1px;
+}
+#rodape{
+  display:flex;
+  align-self: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: blue;
+  width: 100%;
+  height: 61px;
+}
+header h2{
+  color: white;
+}
+.mid{
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  flex-direction: column;
+}
+header{
+  display: flex;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+footer{
+  color: white;
+  
+}
+
+   </style>
+</head>
+<body>
+  <header>
+<h2> CSS Flexbox</h2>
+</header>
+<div class="container">
+
+<div class="esquerda">coluna esquerda</div>
+
+<div class="mid">
+  <p>Não sei o que o amanhã me trará</p><br>
+<p>Não sei o que o amanhã me trará.</p><br>
+<p>Tenho a certeza, porém,</p><br>
+<p>de que seja o que for</p><br>
+<p>trará a noite também,</p><br>
+<p>e o sono, e a paz.</p><br>
+<p>— Álvaro de Campos (Fernando Pessoa)</p><br>
+</div>
+<div class="direita">coluna direita</div>
+    </div>
+   
+    <footer id="rodape">rodapé</footer>
+</body>
