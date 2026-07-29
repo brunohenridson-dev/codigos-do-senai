@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+  <meta charset ="UTF-8">
+  <title>aprendendo grid</title>
+  <style>
+    .pai{
+      display:grid;
+      height:100vh;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-rows: 0.5fr 1.5fr 1.2fr 0.8fr;
+      grid-template-areas: "nav nav nav nav"
+       "sidebar main main main"
+       "sidebar conteudo filho1 filho2"
+       "sidebar footer footer footer";
+    }
+    nav{
+      background: blue;
+      grid-area:nav;
+    }
+    main{
+      background-color: white;
+      grid-area:main;
+    }
+    .sidebar{
+      background-color: rgb(243, 245, 249);
+      grid-area:sidebar;
+      overflow:hidden ;
+      position: relative;
+    }
+    .sidebar img{
+      width: 95%;
+      height: 95%;
+      object-fit:cover;
+      object-position:center;
+    }
+    .filho1{
+      background-color:white;
+      grid-area:filho1;
+    }
+    .filho2{
+      background-color:white;
+      grid-area:filho2;
+}
+footer{
+  background-color: blue;
+  grid-area: footer;
+}
+h3{
+color: white;
+}
+  </style>
+</head>
+<body>
+  <div class="pai">
+    <div class="sidebar">
+    <img src="https://i.pinimg.com/736x/82/d9/33/82d933551ab5b92a38ff7b3f362615a4.jpg" 
+    alt="anime flamengo"></div>
+    <div class="conteudo">poema 1
+    <p>Aime a vida e o tempo,</p><br>
+Chaque jour est un poème,<br>
+Dans l'ombre ou la lumière,<br>
+Sois toujours toi-même.</p><br></div>
+    <div class="filho1">poema 2 <br>
+      <br>
+      Le temps efface les souvenirs<br>
+Mais laisse briller les grands rêves,<br>
+Hier n'est plus qu'un doux soupir,<br>
+Et la vie jamais ne s'achève<br>
+</div>
+    <div class="filho2">poema 3
+      <br>
+       <br>
+    Gravir la montagne à pas lents,<br>
+Fixer le sommet dans le noir,<br>
+Lutter contre le froid, le vent,<br>
+Et ne jamais perdre l'espoir.<br>
+    </div>
+  <nav>
+    <h3>     barra de navegação</h3>
+  </nav>
+  <main>
+  <h4>poemas em frances</h4>
+  </main>
+  <footer>
+    <h3>rodapé</h3>
+  </footer>
+  </div>
+</body>
